@@ -20,7 +20,7 @@
             "settings": {
               "text": "All our stores are open. Visit us today. Book an appointment.",
               "color_scheme": "inverse",
-              "link": "\/en\/locations"
+              "link": "shopify:\/\/pages\/test"
             }
           }
         },
