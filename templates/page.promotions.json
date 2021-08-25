@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1629902818c6bfd0a9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div> test <\/div>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1629902818c6bfd0a9"
+  ]
+}
