@@ -58,11 +58,39 @@
         "color_scheme": "background-1",
         "layout": "text_first"
       }
+    },
+    "1629906641f2005017": {
+      "type": "image-with-text",
+      "blocks": {
+        "1629906641f2005017-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "HIGH RESPONSIVENESS"
+          }
+        },
+        "1629906641f2005017-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>5G provides ultra fast, instantaneous response times for your every day activities. You will be able to get near real-time performance for tasks like gaming, browsing the internet and making video calls.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1629906641f2005017-0",
+        "1629906641f2005017-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/aasp-icon3.png",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
     }
   },
   "order": [
     "main",
     "1629906006cd847da9",
-    "1629906024fc94d69b"
+    "1629906024fc94d69b",
+    "1629906641f2005017"
   ]
 }
