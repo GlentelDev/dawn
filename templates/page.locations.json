@@ -1,5 +1,31 @@
 {
   "sections": {
+    "1629903174fed97526": {
+      "type": "rich-text",
+      "blocks": {
+        "1629903174fed97526-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "COVID-19 UPDATE",
+            "heading_size": "h2"
+          }
+        },
+        "1629903174fed97526-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All our stores are open. Please call your local store for the latest business hours.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1629903174fed97526-0",
+        "1629903174fed97526-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -7,6 +33,7 @@
     }
   },
   "order": [
+    "1629903174fed97526",
     "main"
   ]
 }
