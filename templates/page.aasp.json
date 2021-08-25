@@ -1,5 +1,15 @@
 {
   "sections": {
+    "1629906833f51d530f": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/aasp-header.jpg",
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -88,6 +98,7 @@
     }
   },
   "order": [
+    "1629906833f51d530f",
     "main",
     "1629906006cd847da9",
     "1629906024fc94d69b",
