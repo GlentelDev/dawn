@@ -10,6 +10,7 @@
     "type_header_font": "roboto_condensed_n4",
     "type_body_font": "roboto_n4",
     "accent_icons": "text",
+    "page_width": "1600",
     "favicon": "shopify:\/\/shop_images\/WW-BlueW-Logo.png",
     "sections": {
       "announcement-bar": {
