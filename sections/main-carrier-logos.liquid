@@ -1,31 +1,28 @@
-<!-- HTML GOES HERE -->
+<div class="custom-text-section">
+  <h2> {{ section.settings.custom_text_title }} </h2>
+  <div>{{ section.settings.custom_text_body }}</div>
+</div>
 
 {% schema %}
   {
-    "name": "Section name",
+    "name": "Text Box",
     "settings": [
       {
-        "type": "image_picker",
-        "id": "title",
-        "label": "t:sections.multicolumn.settings.title.label"
-      }
-	],
-    "blocks": [
+        "id": "custom_text_title",
+        "type": "text",
+        "label": "Text box heading",
+        "default": "Title"
+      },
       {
-        "type": "image_picker",
-        "name": "image block",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "t:sections.multicolumn.blocks.column.settings.image.label"
-          }
-        ]
+        "id": "custom_text_body",
+        "type": "richtext",
+        "label": "Add custom text below",
+		"default": "<p>Add your text here</p>"
       }
     ],
     "presets": [
       {
-        "name": "t:sections.multicolumn.presets.name",
+        "name": "custom-text",
         "category": "Custom"
       }
     ]
