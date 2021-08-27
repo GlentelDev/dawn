@@ -1,7 +1,8 @@
-<div class="custom-text-section">
-  <h2> {{ section.settings.custom_text_title }} </h2>
-  <div>{{ section.settings.custom_text_body }}</div>
-</div>
+{% for block in sectionblocks %}
+
+	<img src="{{block.settings.image | img_url:'master'}}/>
+              
+{% endfor %}
 
 {% schema %}
   {
