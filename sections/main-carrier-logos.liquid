@@ -1,8 +1,8 @@
 {% for block in section.blocks %}
 
-	<img src="{{blocks.settings.logos | img_url:'master'}}/>
+	<img src="{{block.settings.logos | img_url:'master'}}/>
               
-              {{blocks.settings.logos }}
+              {{block.settings.logos }}
               
 {% endfor %}
 
