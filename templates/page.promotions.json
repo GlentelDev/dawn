@@ -5,15 +5,45 @@
       "settings": {
       }
     },
-    "1629902818c6bfd0a9": {
-      "type": "custom-liquid",
+    "1630086046f31e907b": {
+      "type": "main-carrier-logos",
+      "blocks": {
+        "90f42297-25d5-48b9-a0d5-0971f5daa68a": {
+          "type": "image_picker",
+          "settings": {
+            "logos": "shopify:\/\/shop_images\/bell_logo.png"
+          }
+        },
+        "a4846fb4-4117-4b39-8704-32b9d066dfdc": {
+          "type": "image_picker",
+          "settings": {
+            "logos": "shopify:\/\/shop_images\/fido_logo.png"
+          }
+        },
+        "6f3cac78-b8b1-47db-ae45-5cbaf2a96630": {
+          "type": "image_picker",
+          "settings": {
+          }
+        },
+        "fcbf7e12-3bb7-4955-ab07-be05cc6fcb7f": {
+          "type": "image_picker",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "90f42297-25d5-48b9-a0d5-0971f5daa68a",
+        "a4846fb4-4117-4b39-8704-32b9d066dfdc",
+        "6f3cac78-b8b1-47db-ae45-5cbaf2a96630",
+        "fcbf7e12-3bb7-4955-ab07-be05cc6fcb7f"
+      ],
       "settings": {
-        "custom_liquid": ""
+        "logos": "shopify:\/\/shop_images\/rogers_logo.png"
       }
     }
   },
   "order": [
     "main",
-    "1629902818c6bfd0a9"
+    "1630086046f31e907b"
   ]
 }
