@@ -32,6 +32,57 @@
         "adapt_height_first_image": false
       }
     },
+    "1630349475697a9b7b": {
+      "type": "main-carrier-logos",
+      "blocks": {
+        "5bdb97ba-47ce-46f2-bb06-20202cde4361": {
+          "type": "image_picker",
+          "settings": {
+            "logos": "shopify:\/\/shop_images\/rogers_logo.png"
+          }
+        },
+        "3c60b15e-e8bb-4aac-93a4-8bc2868675c1": {
+          "type": "image_picker",
+          "settings": {
+            "logos": "shopify:\/\/shop_images\/bell_logo.png"
+          }
+        },
+        "5cc4b7d1-fd01-4c05-80e0-badca3ef3e74": {
+          "type": "image_picker",
+          "settings": {
+            "logos": "shopify:\/\/shop_images\/fido_logo.png"
+          }
+        },
+        "198d4904-93d9-4589-a9f2-e5b49a6010b7": {
+          "type": "image_picker",
+          "settings": {
+            "logos": "shopify:\/\/shop_images\/virgin_logo.png"
+          }
+        },
+        "d3230524-40c3-4768-bd51-68540729b299": {
+          "type": "image_picker",
+          "settings": {
+            "logos": "shopify:\/\/shop_images\/lucky_logo.png"
+          }
+        },
+        "037d89b5-033e-409c-9cc4-ac362ce35c66": {
+          "type": "image_picker",
+          "settings": {
+            "logos": "shopify:\/\/shop_images\/chatr_logo.png"
+          }
+        }
+      },
+      "block_order": [
+        "5bdb97ba-47ce-46f2-bb06-20202cde4361",
+        "3c60b15e-e8bb-4aac-93a4-8bc2868675c1",
+        "5cc4b7d1-fd01-4c05-80e0-badca3ef3e74",
+        "198d4904-93d9-4589-a9f2-e5b49a6010b7",
+        "d3230524-40c3-4768-bd51-68540729b299",
+        "037d89b5-033e-409c-9cc4-ac362ce35c66"
+      ],
+      "settings": {
+      }
+    },
     "multi_column": {
       "type": "multicolumn",
       "blocks": {
@@ -161,6 +212,7 @@
   },
   "order": [
     "image_banner",
+    "1630349475697a9b7b",
     "multi_column",
     "featured_products",
     "162989953276e8370a"
