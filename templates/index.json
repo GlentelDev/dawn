@@ -83,77 +83,6 @@
       "settings": {
       }
     },
-    "multi_column": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/rogers_logo.png",
-            "title": "",
-            "text": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/bell_logo.png",
-            "title": "",
-            "text": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fido_logo.png",
-            "title": "",
-            "text": ""
-          }
-        },
-        "d953decb-6c87-4fa8-90ef-088d176bef5d": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/virgin_logo.png",
-            "title": "",
-            "text": ""
-          }
-        },
-        "50ec20fe-f2d7-4ca9-9512-0e81e2fbd7f5": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/lucky_logo.png",
-            "title": "",
-            "text": ""
-          }
-        },
-        "04e56e1f-f46a-47a2-9fde-b5abf5f0dc69": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/chatr_logo.png",
-            "title": "",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3",
-        "d953decb-6c87-4fa8-90ef-088d176bef5d",
-        "50ec20fe-f2d7-4ca9-9512-0e81e2fbd7f5",
-        "04e56e1f-f46a-47a2-9fde-b5abf5f0dc69"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "half",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false
-      }
-    },
     "featured_products": {
       "type": "featured-collection",
       "settings": {
@@ -213,7 +142,6 @@
   "order": [
     "image_banner",
     "1630349475697a9b7b",
-    "multi_column",
     "featured_products",
     "162989953276e8370a"
   ]
