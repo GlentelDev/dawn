@@ -43,7 +43,7 @@
 		display: grid;
 		align-self: center;
 		place-self: center;
-		width: 100%
+		width: 100%;
 		height: auto;
 		padding: 1rem;
 	}
@@ -51,6 +51,16 @@
 	@media screen and (max-width: 1000px) {
       .carrier-logos-container {
           grid-template-columns: repeat(3, auto);
+      }
+    }
+
+	@media screen and (max-width: 400px) {
+      .carrier-logos-container {
+          grid-template-columns: repeat(2, auto);
+      }
+
+      .carrier-logo {
+          width: 90%;
       }
     }
 {% endstylesheet %}
