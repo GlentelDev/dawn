@@ -29,6 +29,19 @@
         "fcbf7e12-3bb7-4955-ab07-be05cc6fcb7f": {
           "type": "image_picker",
           "settings": {
+            "logos": "shopify:\/\/shop_images\/virgin_logo.png"
+          }
+        },
+        "a2eae52a-001c-43f1-8498-dc66bdf82ddd": {
+          "type": "image_picker",
+          "settings": {
+            "logos": "shopify:\/\/shop_images\/chatr_logo.png"
+          }
+        },
+        "77732522-20d3-4e5a-b5d4-01e37f823ce1": {
+          "type": "image_picker",
+          "settings": {
+            "logos": "shopify:\/\/shop_images\/lucky_logo.png"
           }
         }
       },
@@ -36,7 +49,9 @@
         "6f3cac78-b8b1-47db-ae45-5cbaf2a96630",
         "90f42297-25d5-48b9-a0d5-0971f5daa68a",
         "a4846fb4-4117-4b39-8704-32b9d066dfdc",
-        "fcbf7e12-3bb7-4955-ab07-be05cc6fcb7f"
+        "fcbf7e12-3bb7-4955-ab07-be05cc6fcb7f",
+        "a2eae52a-001c-43f1-8498-dc66bdf82ddd",
+        "77732522-20d3-4e5a-b5d4-01e37f823ce1"
       ],
       "settings": {
       }
