@@ -1,6 +1,12 @@
-{% for block in section.blocks %}
-  <img src="{{block.settings.logos |  img_url: '170x48'}}">
-{% endfor %}
+<div class="carrier-logos-container">
+
+  {% for block in section.blocks %}
+    <div class="carrier-logo">
+      <img src="{{block.settings.logos |  img_url: '170x48'}}">
+    </div>
+  {% endfor %}
+  
+</div>
 
 {% schema %}
   {
