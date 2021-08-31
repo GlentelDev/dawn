@@ -1,7 +1,7 @@
-<div class="carrier-logos-container page-width">
+<div class="carrier-logos-container page-width grid">
 
   {% for block in section.blocks %}
-    <div class="carrier-logo">
+    <div class="carrier-logo grid-item">
       <img src="{{block.settings.logos |  img_url: '170x48'}}">
     </div>
   {% endfor %}
