@@ -1,3 +1,5 @@
+{{ 'promo-header.css' | asset_url | stylesheet_tag }}
+
 <div class="promo-header-container full-width">
   <div class="promo-header">
     Dynamic copy goes here or a dynamic image.
@@ -5,13 +7,7 @@
 </div>
 
 <style>
-  .promo-header-container {
-	height: 40rem;
-	background-color: {{section.settings.background_color}};
-	background-image: url({{section.settings.background_image | img_url: "master"}});
-	background-size: cover;
-	background-position: center;
-  }
+  
 </style>
 
 
