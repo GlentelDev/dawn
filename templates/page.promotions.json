@@ -11,11 +11,9 @@
       "blocks": {
         "6e00e2ca-15b6-4897-bc3b-40c867aba443": {
           "type": "BTS",
+          "disabled": true,
           "settings": {
-            "t:BTS_1": "FR1",
-            "t:BTS_2": "FR2",
-            "t:BTS_3": "",
-            "t:BTS_4": ""
+            "t:BTS_1": "FR1"
           }
         }
       },
