@@ -12,10 +12,10 @@
         "6e00e2ca-15b6-4897-bc3b-40c867aba443": {
           "type": "BTS",
           "settings": {
-            "BTS_1": "FR1",
-            "BTS_2": "FR2",
-            "BTS_3": "",
-            "BTS_4": ""
+            "t:BTS_1": "EN1",
+            "t:BTS_2": "EN2",
+            "t:BTS_3": "",
+            "t:BTS_4": ""
           }
         }
       },
