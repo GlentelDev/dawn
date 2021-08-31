@@ -4,9 +4,15 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "1630418664e94eb88d": {
+      "type": "promo-header",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1630418664e94eb88d"
   ]
 }
