@@ -8,6 +8,16 @@
     },
     "1630418664e94eb88d": {
       "type": "promo-header",
+      "blocks": {
+        "747222f8-4fc9-4c5b-ba55-cefd2c71f6ef": {
+          "type": "text",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "747222f8-4fc9-4c5b-ba55-cefd2c71f6ef"
+      ],
       "settings": {
         "background_image": "shopify:\/\/shop_images\/272c08dd-d219-4761-9b4f-c9f156fc7d92.png",
         "background_color": "#6a2525"
