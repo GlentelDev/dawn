@@ -8,6 +8,17 @@
   
 </div>
 
+<style>
+  .promo-header-container {
+	height: 40rem;
+	background-color: {{section.settings.background_color}};
+	background-image: url({{section.settings.background_image}});
+	background-size: cover;
+	background-position: center;
+  }
+</style>
+
+
 {% schema %}
   {
     "name": "Promo Header",
@@ -46,13 +57,6 @@
 {% endschema %}
 
 {% stylesheet %}
-  .promo-header-container {
-	height: 40rem;
-	background-color: {{section.settings.background_color}};
-	background-image: url({{section.settings.background_image}});
-	background-size: cover;
-	background-position: center;
-  }
 
 {% endstylesheet %}
 
