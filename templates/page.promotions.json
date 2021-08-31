@@ -1,20 +1,21 @@
 {
   "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
     "1630418664e94eb88d": {
       "type": "promo-header",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/aasp-header.jpg",
+        "background_image": "shopify:\/\/shop_images\/272c08dd-d219-4761-9b4f-c9f156fc7d92.png",
         "background_color": "#6a2525"
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "settings": {
       }
     }
   },
   "order": [
-    "1630418664e94eb88d",
-    "main"
+    "main",
+    "1630418664e94eb88d"
   ]
 }
