@@ -6,6 +6,12 @@
   </div>
 </div>
 
+{% if request.locale.name == "English" %}
+   <h1>English</h1>
+{% else %}
+   <h1>French</h1>
+{% endif %}
+
 <style>
   .promo-header-container {
 	height: 40rem;
