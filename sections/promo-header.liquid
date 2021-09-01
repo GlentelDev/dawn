@@ -2,15 +2,14 @@
 
 <div class="promo-header-container full-width">
   <div class="promo-header">
-    Dynamic copy goes here or a dynamic image.
+    {% if request.locale.name == "English" %}
+       <h1>English</h1>
+    {% else %}
+       <h1>French</h1>
+    {% endif %}
   </div>
 </div>
 
-{% if request.locale.name == "English" %}
-   <h1>English</h1>
-{% else %}
-   <h1>French</h1>
-{% endif %}
 
 <style>
   .promo-header-container {
@@ -48,62 +47,74 @@
           {
             "id": "en_bts_line1",
             "type": "text",
-            "label": "EN Line1"
+            "label": "EN Line1",
+			"default": "HOT"
           },
           {
             "id": "en_bts_line2",
             "type": "text",
-            "label": "EN Line2"
+            "label": "EN Line2",
+			"default": "DEAL"
           },
           {
             "id": "en_bts_line3",
             "type": "text",
-            "label": "EN Line3"
+            "label": "EN Line3",
+			"default": "S"
           },
           {
             "id": "en_bts_line4",
             "type": "text",
-            "label": "EN Line4"
+            "label": "EN Line4",
+			"default": "for"
           },
           {
             "id": "en_bts_line5",
             "type": "text",
-            "label": "EN Line5"
+            "label": "EN Line5",
+			"default": "BACK TO"
           },
           {
             "id": "en_bts_line6",
             "type": "text",
-            "label": "EN Line6"
+            "label": "EN Line6",
+			"default": "SCHOOL"
           },
 		  {
             "id": "fr_bts_line1",
             "type": "text",
-            "label": "FR Line1"
+            "label": "FR Line1",
+			"default": "SUPER"
           },
           {
             "id": "fr_bts_line2",
             "type": "text",
-            "label": "FR Line2"
+            "label": "FR Line2",
+			"default": "AFFAIRES"
           },
           {
             "id": "fr_bts_line3",
             "type": "text",
-            "label": "FR Line3"
+            "label": "FR Line3",
+			"default": "pour la"
           },
           {
             "id": "fr_bts_line4",
             "type": "text",
-            "label": "FR Line4"
+            "label": "FR Line4",
+			"default": "Test"
           },
           {
             "id": "fr_bts_line5",
             "type": "text",
-            "label": "FR Line5"
+            "label": "FR Line5",
+			"default": "RENTRÉE"
           },
           {
             "id": "fr_bts_line6",
             "type": "text",
-            "label": "FR Line6"
+            "label": "FR Line6",
+			"default": "SCOLAIRE"
           }
 		]
       },
