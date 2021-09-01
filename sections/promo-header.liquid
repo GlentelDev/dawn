@@ -4,8 +4,11 @@
   <div class="promo-header">
     {% if request.locale.name == "English" %}
        <h1>English</h1>
+    	{{blocks.settings.en_bts_line1}}
     {% else %}
-       <h1>French</h1>
+       <h1>French</h1>    	
+    	{{blocks.settings.fr_bts_line1}}
+
     {% endif %}
   </div>
 </div>
