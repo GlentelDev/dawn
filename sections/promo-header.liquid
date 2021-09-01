@@ -3,10 +3,10 @@
 <div class="promo-header-container full-width">
   <div class="promo-header">
     {% if request.locale.name == "English" %}
-       <h1>English{{block.settings.en_bts_line1}}</h1>
+       <h1>English{{section.blocks.settings.en_bts_line1}}</h1>
     	
     {% else %}
-       <h1>French{{block.settings.fr_bts_line1}}</h1>    	
+       <h1>French{{section.blocks.settings.fr_bts_line1}}</h1>    	
     	
     {% endif %}
   </div>
