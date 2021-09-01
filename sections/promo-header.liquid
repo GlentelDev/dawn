@@ -5,6 +5,9 @@
     {% if request.locale.name == "English" %}
        <h1>English{{section.blocks[0].title }}</h1>
     	<h1>{{section.block.settings.background_image | img_url: "master"}}</h1>
+        {% for block in section.blocks %}
+          {{block.settings.en_bts_line1}}
+      	{% endfor %}
     {% else %}
        <h1>French{{section.block.settings.fr_bts_line1}}</h1>    	
     	
