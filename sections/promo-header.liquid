@@ -3,10 +3,10 @@
 <div class="promo-header-container full-width">
   <div class="promo-header">
     {% if request.locale.name == "English" %}
-       <h1>English{{section.blocks.settings.en_bts_line1}}</h1>
-    	<h1>{{section.blocks.settings.background_image | img_url: "master"}}</h1>
+       <h1>English{{section.block.settings.en_bts_line1}}</h1>
+    	<h1>{{section.block.settings.background_image | img_url: "master"}}</h1>
     {% else %}
-       <h1>French{{section.blocks.settings.fr_bts_line1}}</h1>    	
+       <h1>French{{section.block.settings.fr_bts_line1}}</h1>    	
     	
     {% endif %}
   </div>
@@ -16,10 +16,11 @@
 <style>
   .promo-header-container {
 	height: 40rem;
-	background-color: {{section.blocks.settings.background_color}};
-    {% if section.blocks.settings.background_image %} 
-    	background-image: url({{section.blocks.settings.background_image | img_url: "master"}});
+	background-color: {{section.block.settings.background_color}};
+    {% if section.block.settings.background_image %} 
+    	background-image: url({{section.block.settings.background_image | img_url: "master"}});
     {% else %}
+    
     {% endif %}
 	background-size: cover;
 	background-position: center;
