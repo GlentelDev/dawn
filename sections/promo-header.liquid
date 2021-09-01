@@ -11,13 +11,17 @@
     {% endif %}
   </div>
 </div>
-
+<!-- section.settings.background_image -->
 
 <style>
   .promo-header-container {
 	height: 40rem;
-	background-color: {{section.settings.background_color}};
-	background-image: url({{section.settings.background_image | img_url: "master"}});
+	background-color: {{section.blocks.background_color}};
+    {% if section.blocks.background_image %} 
+    	background-image: url({{section.blocks.background_image | img_url: "master"}});
+    {% else %}
+		background-image: url({{'bts_background.png' | asset_url | img_tag | img_url: "master"}});
+    {% endif %}
 	background-size: cover;
 	background-position: center;
   }
