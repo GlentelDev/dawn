@@ -2197,8 +2197,8 @@ details-disclosure > details {
   }
   
   .Shogun-Top-Smartphone-link a {
-  color:#004A98;
-  text-decoration: underline !important;	
+  color:#fff;
+  text-decoration: underline;	
   }
 
 .Shogun-Top-Smartphone-link a:hover {
