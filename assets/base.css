@@ -2194,9 +2194,9 @@ details-disclosure > details {
   
   .Shogun-carriers-Logo{
   Background-color:#004A98;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-	   -moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
+    -webkit-box-shadow: 0 8px 6px -6px #a9a9a9;
+	   -moz-box-shadow: 0 8px 6px -6px #a9a9a9;
+	        box-shadow: 0 8px 6px -6px #a9a9a9;
   }
   
   .Shogun-Featured-Body-Text p{
