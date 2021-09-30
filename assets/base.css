@@ -2192,6 +2192,6 @@ details-disclosure > details {
 
  /*********************** Shogun Custom CSS Document ***********************/
   
-  .Shogun-Featured-Body-Text{
+  .Shogun-Featured-Body-Text p{
   color:#ffffff !important;
   }
