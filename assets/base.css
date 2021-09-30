@@ -2199,6 +2199,11 @@ details-disclosure > details {
 	        box-shadow: 0 8px 6px -6px #a9a9a9;
   }
   
+  
+  .Shogun-img-bottomline{
+  padding-bottom;2px;
+  }
+  
   .Shogun-Featured-Body-Text p{
   color:#ffffff !important;
   }
