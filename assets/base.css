@@ -2190,4 +2190,8 @@ details-disclosure > details {
   word-break: break-word;
 }
 
- 
+ /*********************** Shogun Custom CSS Document ***********************/
+  
+  .Home-Featured-Text-SM{
+  Colour:#fff;
+  }
