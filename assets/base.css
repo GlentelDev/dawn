@@ -2196,7 +2196,7 @@ details-disclosure > details {
   color:#ffffff !important;
   }
   
-  .Shogun-Top-Smartphone-link a {
+  .Shogun-Top-Smartphone-link, .shg-align-center a {
   color:#004A98;
   text-decoration: underline;	
   }
