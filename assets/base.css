@@ -2201,7 +2201,7 @@ details-disclosure > details {
   
   
   .Shogun-img-bottomline{
-  padding-bottom:3px;
+  padding-bottom:3px !important;
   }
   
   .shg-c, .Shogun-Featured-Body-Text p{
