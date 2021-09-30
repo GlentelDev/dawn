@@ -2201,11 +2201,11 @@ details-disclosure > details {
   
   
   .Shogun-img-bottomline{
-  padding-bottom;2px;
+  padding-bottom:2px;
   }
   
   .shg-c, .Shogun-Featured-Body-Text p{
-  color:#ffffff;
+  color:#ffffff !important;
   }
   
   .Shogun-Top-Smartphone-link, .shg-align-center a {
