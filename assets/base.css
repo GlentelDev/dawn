@@ -2204,8 +2204,8 @@ details-disclosure > details {
   padding-bottom;2px;
   }
   
-  .Shogun-Featured-Body-Text p{
-  color:#ffffff;
+  .shg-c, .Shogun-Featured-Body-Text p{
+  color:#ffffff !important;
   }
   
   .Shogun-Top-Smartphone-link, .shg-align-center a {
