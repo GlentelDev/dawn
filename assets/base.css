@@ -2196,12 +2196,12 @@ details-disclosure > details {
   color:#ffffff !important;
   }
   
-  .Shogun-Top-Smartphone-link, .shg-align-center a {
+  .shg-c, .Shogun-Top-Smartphone-link, .shg-align-center a {
   color:#004A98;
   text-decoration: underline;	
   }
 
-.Shogun-Top-Smartphone-link, .shg-align-center a:hover {
+  .shg-c, .Shogun-Top-Smartphone-link, .shg-align-center a:hover {
   color:#000000;
   text-decoration: none;
   }
