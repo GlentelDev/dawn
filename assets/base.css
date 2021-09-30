@@ -2195,3 +2195,13 @@ details-disclosure > details {
   .Shogun-Featured-Body-Text p{
   color:#ffffff !important;
   }
+  
+  .Shogun-Top-Smartphone-link a {
+  color:#004A98;
+  text-decoration: underline;	
+  }
+
+.Shogun-Top-Smartphone-link a:hover {
+  color:#000000;
+  text-decoration: none;	
+  }
