@@ -2192,6 +2192,10 @@ details-disclosure > details {
 
  /*********************** Shogun Custom CSS Document ***********************/
   
+  .Shogun-carriers-Logo{
+  Background-color:#004A98;
+  }
+  
   .Shogun-Featured-Body-Text p{
   color:#ffffff !important;
   }
