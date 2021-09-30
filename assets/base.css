@@ -2201,7 +2201,7 @@ details-disclosure > details {
   text-decoration: underline;	
   }
 
-.Shogun-Top-Smartphone-link a:hover {
+.Shogun-Top-Smartphone-link, .shg-align-center a:hover {
   color:#000000;
   text-decoration: underline;
   }
