@@ -2216,46 +2216,4 @@ details-disclosure > details {
   text-decoration: underline;
   }
   
-  .css-okihy6 {
-                    background-color: #01559b;
-                    border-color: #01559b;
-                    display: -webkit-box;
-                    display: -webkit-flex;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                    -webkit-justify-content: center;
-                    justify-content: center;
-                    -webkit-align-items: center;
-                    -webkit-box-align: center;
-                    -ms-flex-align: center;
-                    align-items: center;
-                    padding-left: 1.5rem;
-                    padding-right: 1.5rem;
-                    padding-top: 0.75rem;
-                    padding-bottom: 0.75rem;
-                    font-family: Roboto, sans-serif;
-                    font-size: 1.1rem;
-                    text-align: center;
-                    --tw-text-opacity: 1;
-                    color: rgba(255, 255, 255, var(--tw-text-opacity));
-                    -webkit-text-decoration: none;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    border-style: solid;
-                    border-radius: 0.5rem;
-                    border-width: 2px;
-                  }
-                  .css-okihy6:hover {
-                    color: #01559b;
-                  }
-                  .css-okihy6:hover {
-                    --tw-bg-opacity: 1;
-                    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-                    border-style: solid;
-                    -webkit-text-decoration: none;
-                    text-decoration: none;
-                    border-width: 2px;
-                  }
              
