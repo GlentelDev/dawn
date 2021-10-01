@@ -2289,7 +2289,7 @@ a[aria-current] {
   }
   
   
-  .carrier-logo-1, .carrier-logo-2{
+  .carrier-logo-1, .carrier-logo-2, .carrier-logo-3, .carrier-logo-4 .carrier-logo-5{ 
   border-right: dotted 1px #fff;
     padding-top:30px;
     height:90px;
