@@ -2207,7 +2207,9 @@ details-disclosure > details {
     	background-color: #004A98 !important;
 
 }
- 
+  .header__menu-item:hover span{
+  text-decoration: none;
+  }
   
  
   
