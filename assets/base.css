@@ -2260,7 +2260,7 @@ a[aria-current] {
     color:#fff;
   }
   
-  .header__submenu {
+  .header__submenu .header__menu-item {
   border-left:none;
     border-bottom: solid 1px #fff;
   }
