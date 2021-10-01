@@ -2242,7 +2242,7 @@ details-disclosure > details {
   }
   
 a[aria-current] {
-  text-decoration: none;
+  text-decoration: none !important;
   Background-color:#004A98;
 }
   
