@@ -2224,6 +2224,12 @@ details-disclosure > details {
 background-color: #B51F24 !important;
     
 }
+    .header__inline-menu ul li:last-child hover span {
+background-color: #000 !important;
+    
+}
+  
+  
   
   .Shogun-carriers-Logo{
   Background-color:#004A98;
