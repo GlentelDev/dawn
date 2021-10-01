@@ -2206,7 +2206,12 @@ details-disclosure > details {
   }
   .header__inline-menu {
     background-color: #000;
-}
+	}
+  
+  .header__menu-item .icon-caret{
+  
+  right: 4.8rem;
+  }
   .list-menu__item{
   	justify-content: center;
   }
