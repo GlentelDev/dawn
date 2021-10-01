@@ -2291,11 +2291,15 @@ a[aria-current] {
   
   .carrier-logo-1, .carrier-logo-2, .carrier-logo-3, .carrier-logo-4, .carrier-logo-5{ 
   border-right: dotted 1px #fff;
-    padding:10px;
+    padding:30px;
 
     
   }
   
+  .carrier-logo-6{
+  
+  padding:30px;
+  }
   
   .Shogun-img-bottom1{
   padding-bottom:4px;
