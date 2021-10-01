@@ -2196,7 +2196,7 @@ details-disclosure > details {
   
   /* NAV*/
   
-  .header__menu-item ul li{
+  .header__menu-item {
   	min-width: 192px;
 	border-left: solid 1px #fff;
   }
