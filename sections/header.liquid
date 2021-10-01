@@ -616,3 +616,15 @@
   ]
 }
 {% endschema %}
+
+        
+        $(".mobile-mega-menu-parent > a, .mobile-mega-menu_block > a").click(function(e){
+	e.preventDefault(); 
+	if($(this).find("span").hasClass("active")){ 
+		$(this).find("span").removeClass("active"); 
+		$(this).next("ul").slideUp(); 
+	}else{ 
+		$(this).find("span").addClass("active"); 
+		$(this).next("ul").slideDown(); 
+	}  
+});
