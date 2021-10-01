@@ -2242,7 +2242,8 @@ details-disclosure > details {
   }
   
 a[aria-current] {
-    Background-color:#004A98;
+  text-decoration: none;
+  Background-color:#004A98;
 }
   
   
