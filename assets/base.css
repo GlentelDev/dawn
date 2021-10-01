@@ -2232,7 +2232,7 @@ details-disclosure > details {
   	text-decoration: none;
   }
   
-  .header__active-menu-item{
+  .header__active-menu-item: active span{
   	text-decoration: none;
     background-color: #004A98 !important;
   }
