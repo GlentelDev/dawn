@@ -2268,7 +2268,7 @@ a[aria-current] {
   }
  
   
-    .header__submenu, .list-menu ul li:hover {
+    .header__submenu.list-menu ul li ul li a:hover {
     background-color: #c4c4c4 !important;
 
 }
