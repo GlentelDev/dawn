@@ -2218,6 +2218,6 @@ details-disclosure > details {
   text-decoration: underline;
   }
   
-  .nav.main {
+  .header__inline-menu {
     background-color: #00FF00 !important;
 }           
