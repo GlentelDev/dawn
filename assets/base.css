@@ -2202,32 +2202,27 @@ details-disclosure > details {
   .header__inline-menu {
     background-color: #000;
 }
+  .list-menu__item a{
+    background-color: #004A98 !important;
+  }
+
+  .header__inline-menu ul li:last-child {
+	background-color: #B51F24;
+    }
   
-     .header__menu-item:hover {
-    	background-color: #004A98 !important;
+  .header__menu-item:hover {
+    background-color: #004A98 !important;
 
 }
   .header__menu-item:hover span{
-  text-decoration: none;
+  	text-decoration: none;
   }
   
   .header__menu-item .icon-caret{
   	color:#fff;
   }
   
-  .list-menu__item a{
-    background-color: #004A98 !important;
-  }
-  
-  
-  .header__inline-menu ul li:last-child {
-background-color: #B51F24 !important;
-    
-}
-    .header__inline-menu ul li:last-child hover span {
-background-color: #000 !important;
-    
-}
+
   
   
   
