@@ -2241,8 +2241,8 @@ details-disclosure > details {
   	color:#fff;
   }
   
-[aria-curent="page"] {
-  background-color: red!important;
+a[aria-curent="page"] {
+  background-color: red;
 }
   
   
