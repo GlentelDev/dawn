@@ -2219,3 +2219,6 @@ details-disclosure > details {
   }
   
              
+#AccessibleNav .site-nav__link {
+ color: #000;
+}
