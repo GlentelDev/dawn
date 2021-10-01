@@ -2197,7 +2197,7 @@ details-disclosure > details {
   /* NAV */
   .header__inline-menu {
     background-color: #00FF00 !important;
-    color:#fff;
+    color:#fff!important;
 }
   
      .header__menu-item:hover {
