@@ -2241,10 +2241,9 @@ details-disclosure > details {
   	color:#fff;
   }
   
-a:[aria-curent="page"] {
-  background-color: red;
+a[aria-current] {
+    Background-color:#004A98;
 }
-  
   
   
   .Shogun-carriers-Logo{
