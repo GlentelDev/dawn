@@ -1773,7 +1773,6 @@ input[type='checkbox'] {
 
 @media screen and (min-width: 990px) {
   .header {
-    width:1170px;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
