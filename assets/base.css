@@ -2265,7 +2265,10 @@ a[aria-current] {
     border-bottom: solid 1px #fff;
   }
   
+  .header__submenu.list-menu ul li ul li:last-child {
   
+  border-bottom:none;
+  }
   
   .Shogun-carriers-Logo{
   Background-color:#004A98;
