@@ -2201,8 +2201,9 @@ details-disclosure > details {
 }
   
      .header__menu-item:hover {
-    background-color: #004A98 !important;
-       color:#fff;
+    	background-color: #004A98 !important;
+     	color:#fff;
+       	text-decoration: none;
 }
   
   
