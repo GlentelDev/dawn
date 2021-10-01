@@ -2193,7 +2193,17 @@ details-disclosure > details {
 
  /*********************** Shogun Custom CSS Document ***********************/
   
-
+  
+  /* NAV */
+  .header__inline-menu {
+    background-color: #00FF00 !important;
+}
+  
+    .header__menu-item {
+    background-color: #FFF !important;
+}
+  
+  
   .Shogun-carriers-Logo{
   Background-color:#004A98;
     -webkit-box-shadow: 0 8px 6px -6px #a9a9a9;
@@ -2217,7 +2227,4 @@ details-disclosure > details {
   color:#000000;
   text-decoration: underline;
   }
-  
-  .header__inline-menu {
-    background-color: #00FF00 !important;
-}           
+            
