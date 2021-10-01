@@ -2268,6 +2268,12 @@ a[aria-current] {
   }
  
   
+    .header__submenu:hover {
+    background-color: #004A98 !important;
+
+}
+  
+  
   
   
   
