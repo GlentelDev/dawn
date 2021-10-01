@@ -2196,12 +2196,21 @@ details-disclosure > details {
   
   /* NAV*/
   
+  .header__menu-item{
+  	min-width: 192px;
+	border-left: solid 1px #fff;
+  }
+  
   .header__menu-item span{
   color:#fff!important;
   }
   .header__inline-menu {
     background-color: #000;
 }
+  .list-menu__item{
+  	justify-content: center;
+  }
+  
   .list-menu__item a{
     background-color: #004A98 !important;
   }
