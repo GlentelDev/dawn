@@ -2211,7 +2211,9 @@ details-disclosure > details {
   text-decoration: none;
   }
   
- 
+  .header__menu-item .icon-caret{
+  	color:#fff;
+  }
   
   
   
