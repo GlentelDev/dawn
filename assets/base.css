@@ -2291,6 +2291,7 @@ a[aria-current] {
   
   .carrier-logo-1{
   border-right: dotted 1px #fff;
+    margin-top:25px;
     height:90px;
   }
   
