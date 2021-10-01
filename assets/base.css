@@ -2220,7 +2220,10 @@ details-disclosure > details {
   }
   
   
-  
+  .header__inline-menu ul li:last-child {
+  border: 1px solid red;
+  color: red;
+}
   
   .Shogun-carriers-Logo{
   Background-color:#004A98;
