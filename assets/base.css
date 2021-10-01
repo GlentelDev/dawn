@@ -2232,6 +2232,10 @@ details-disclosure > details {
   	text-decoration: none;
   }
   
+  .header__active-menu-item{
+     text-decoration: none !important;
+  }
+  
   .header__active-menu-item: active span{
   	text-decoration: none;
     background-color: #004A98 !important;
@@ -2242,7 +2246,6 @@ details-disclosure > details {
   }
   
 a[aria-current] {
-  text-decoration: none !important;
   Background-color:#004A98;
 }
   
