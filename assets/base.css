@@ -2215,7 +2215,7 @@ details-disclosure > details {
   	color:#fff;
   }
   
-  .list-menu__item{
+  .list-menu__item a{
     background-color: #004A98 !important;
   }
   
