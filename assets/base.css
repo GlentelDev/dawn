@@ -2241,7 +2241,7 @@ details-disclosure > details {
   	color:#fff;
   }
   
-ul li a[aria-curent="page"] {
+a:[aria-curent="page"] {
   background-color: red;
 }
   
