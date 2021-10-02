@@ -2277,15 +2277,6 @@ a[aria-current] {
 }
   
   
-@media only screen and (min-width: 992px) {
-
-
-min-width: 150px;
-
-}
-  
-  }
-  
   .carrier-logo-1, .carrier-logo-2, .carrier-logo-3, .carrier-logo-4, .carrier-logo-5{ 
   border-right: dotted 1px #fff;
     width:35%;
