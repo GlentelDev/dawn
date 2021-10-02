@@ -2287,6 +2287,14 @@ width:35%;
   }
   
   
+  @media screen and (max-width: 992px) {
+    
+    .header__menu-item {
+  	min-width: 100px;
+  }
+  
+}
+  
   
   .Shogun-carriers-Logo{
   Background-color:#004A98;
