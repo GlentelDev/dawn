@@ -2277,6 +2277,12 @@ a[aria-current] {
 }
   
   
+  @media (min-width: 1200px) {
+  .container {
+  max-width: 1170px;
+}
+  
+  
   
   .carrier-logo-1, .carrier-logo-2, .carrier-logo-3, .carrier-logo-4, .carrier-logo-5{ 
   border-right: dotted 1px #fff;
