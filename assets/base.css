@@ -2287,10 +2287,10 @@ width:35%;
   }
   
   
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1032px) {
     
     .header__menu-item {
-  	min-width: 100px;
+  	min-width: 100px !important;
   }
   
 }
