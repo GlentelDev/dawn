@@ -13,7 +13,19 @@
           "type": "BTS",
           "disabled": true,
           "settings": {
-            "t:BTS_1": "FR1"
+            "background_color": "#135c81",
+            "en_bts_line1": "HOT",
+            "en_bts_line2": "DEAL",
+            "en_bts_line3": "S",
+            "en_bts_line4": "for",
+            "en_bts_line5": "BACK TO",
+            "en_bts_line6": "SCHOOL",
+            "fr_bts_line1": "SUPER",
+            "fr_bts_line2": "AFFAIRES",
+            "fr_bts_line3": "pour la",
+            "fr_bts_line4": "",
+            "fr_bts_line5": "RENTRÉE",
+            "fr_bts_line6": "SCOLAIRE"
           }
         }
       },
@@ -21,13 +33,17 @@
         "6e00e2ca-15b6-4897-bc3b-40c867aba443"
       ],
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/272c08dd-d219-4761-9b4f-c9f156fc7d92.png",
-        "background_color": "#6a2525"
+      }
+    },
+    "1633377492dd1ca988": {
+      "type": "promo-promotions",
+      "settings": {
       }
     }
   },
   "order": [
     "main",
-    "1630418664e94eb88d"
+    "1630418664e94eb88d",
+    "1633377492dd1ca988"
   ]
 }
