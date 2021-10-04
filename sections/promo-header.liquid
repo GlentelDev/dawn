@@ -5,6 +5,7 @@
     {% if request.locale.name == "English" %}
        <h1>English{{section.blocks[0].title }}</h1>
     	<h1>{{section.block.settings.background_image | img_url: "master"}}</h1>
+    <p> This is just a test</p>
         {% for block in section.blocks %}
           {{block.settings.en_bts_line1}}
       	{% endfor %}
@@ -23,7 +24,7 @@
     {% if section.block.settings.background_image %} 
     	background-image: url({{section.block.settings.background_image | img_url: "master"}});
     
-    This is just a test
+   
     {% else %}
     
     {% endif %}
