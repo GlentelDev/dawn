@@ -1,7 +1,91 @@
+<div class="promo-header-container full-width">
+  <div class="promo-header">
+    {% if request.locale.name == "English" %}
+       <h1>English{{section.blocks[0].title }}</h1>
+    	<h1>{{section.block.settings.background_image | img_url: "master"}}</h1>
+        {% for block in section.blocks %}
+          {{block.settings.en_bts_line1}}
+      	{% endfor %}
+    {% else %}
+       <h1>French{{section.block.settings.fr_bts_line1}}</h1>
+
+    {% endif %}
+  </div>
+</div>
+<!-- section.settings.background_image -->
+
+<style>
+  .promo-header-container {
+	height: 40rem;
+	background-color: {{section.blocks[1].settings.background_color}};
+    {% if section.block.settings.background_image %}
+    	background-image: url({{section.block.settings.background_image | img_url: "master"}});
+    {% else %}
+
+    {% endif %}
+	background-size: cover;
+	background-position: center;
+  }
+/*   var(--color-foreground) */
+</style>
+
+<script>
+
+console.log( {{section.blocks}});
+
+</script>
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Promo1",
+  	"max_blocks": 1,
+    "settings": [
+
+	],
+    "blocks": [
+      {
+		"type": "BTS",
+        "name": "BTS Promo1",
+        "settings": [
+          {
+            "id": "background_image",
+            "type": "image_picker",
+            "label": "Pick a background image"
+          },
+          {
+            "id": "background_color",
+            "type": "color",
+            "label": "Pick a background color",
+            "default": "#135c81"
+          },
+          {
+            "id": "promo_price",
+            "type": "text",
+            "label": "Price",
+			      "default": "0"
+          },
+          {
+            "id": "promo_offer",
+            "type": "text",
+            "label": "Offer",
+			      "default": "with 24-month financing plus an eligible rate plan"
+          },
+          {
+            "id": "promo_cta",
+            "type": "text",
+            "label": "CTA",
+			      "default": "FIND OUT MORE"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Promo Header",
+        "category": "Promo"
+      }
+    ]
   }
 {% endschema %}
 
@@ -9,4 +93,5 @@
 {% endstylesheet %}
 
 {% javascript %}
+
 {% endjavascript %}
