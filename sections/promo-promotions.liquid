@@ -1,7 +1,7 @@
 <div class="promo-header-container full-width">
   <div class="promo-header">
     {% if request.locale.name == "English" %}
-       <h1>English{{section.settings.background_color }}</h1>
+       <h1>English{{section.block.settings.background_color }}</h1>
     	<h1>{{section.block.settings.background_image | img_url: "master"}}</h1>
         {% for block in section.blocks %}
           {{block.settings.en_bts_line1}}
