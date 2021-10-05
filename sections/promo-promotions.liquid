@@ -20,11 +20,11 @@
 	background-color: {{section.settings.background_color}};
     {% if section.settings.background_image %}
     	background-image: url({{section.settings.background_image | img_url: "master"}});
+		background-size: cover;
+		background-position: center;
     {% else %}
 
     {% endif %}
-	background-size: cover;
-	background-position: center;
   }
 /*   var(--color-foreground) */
 </style>
