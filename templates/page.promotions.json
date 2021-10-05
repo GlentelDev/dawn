@@ -37,24 +37,15 @@
     },
     "1633377492dd1ca988": {
       "type": "promo-promotions",
-      "blocks": {
-        "6943ce28-c65f-4992-9afc-2c5f8ce1ab51": {
-          "type": "BTS",
-          "settings": {
-            "background_color": "#cad3d7",
-            "promo_price": "0",
-            "promo_price_size": "0",
-            "promo_offer": "with 24-month financing plus an eligible rate plan",
-            "promo_offer_size": "0",
-            "promo_cta": "FIND OUT MORE",
-            "promo_cta_size": "0"
-          }
-        }
-      },
-      "block_order": [
-        "6943ce28-c65f-4992-9afc-2c5f8ce1ab51"
-      ],
       "settings": {
+        "background_image": "shopify:\/\/shop_images\/bts_background.png",
+        "background_color": "#ffffff",
+        "promo_price": "0",
+        "promo_price_size": "0",
+        "promo_offer": "with 24-month financing plus an eligible rate plan",
+        "promo_offer_size": "0",
+        "promo_cta": "FIND OUT MORE",
+        "promo_cta_size": "0"
       }
     }
   },
