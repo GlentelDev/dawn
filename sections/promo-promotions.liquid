@@ -8,7 +8,6 @@
       	<!-- {% endfor %} -->
     {% else %}
        <h1>French{{section.block.settings.fr_bts_line1}}</h1>
-
     {% endif %}
   </div>
 </div>
@@ -16,15 +15,14 @@
 
 <style>
   .promo-version1-container {
-	height: 40rem;
-	background-color: {{section.settings.background_color}};
+	  height: 40rem;
     {% if section.settings.background_image %}
     	background-image: url({{section.settings.background_image | img_url: "master"}});
-		background-size: cover;
-		background-position: center;
-    {% else %}
-
+    	background-size: cover;
+    	background-position: center;
+    /* {% else %} */
     {% endif %}
+    background-color: {{section.settings.background_color}};
   }
 /*   var(--color-foreground) */
 </style>
@@ -60,8 +58,8 @@ console.log( {{section.blocks}});
       {
         "id": "promo_price_size",
         "type": "text",
-        "label": "Price Font Size",
-        "default": "0"
+        "label": "Price Font Size (rem)",
+        "default": "12"
       },
       {
         "id": "promo_offer",
@@ -72,7 +70,7 @@ console.log( {{section.blocks}});
       {
         "id": "promo_offer_size",
         "type": "text",
-        "label": "Offer Font Size",
+        "label": "Offer Font Size (rem)",
         "default": "0"
       },
       {
@@ -84,7 +82,7 @@ console.log( {{section.blocks}});
       {
         "id": "promo_cta_size",
         "type": "text",
-        "label": "CTA Font Size",
+        "label": "CTA Font Size (rem)",
         "default": "0"
       }
     ],
