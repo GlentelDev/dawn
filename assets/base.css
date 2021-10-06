@@ -2306,7 +2306,12 @@ width:35%;
   
  
   .shogun-icon{font-size: 34px !important;
-vertical-align: middle;}
+vertical-align: middle;
+  border-radius: 4px;
+  background-color: #0457A2;
+color: #fff;
+border: solid 2px #0457A2;
+  }
   
   
   .Shogun-img-bottom1{
