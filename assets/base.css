@@ -2323,7 +2323,12 @@ width:35%;
   color:#000000;
   text-decoration: underline;
   }
-            
+     
+  
+  .store-locator h3{
+    text-transform: uppercase;
+  
+  }
   .store-locator{
     margin-right: 130px;
     border: solid 1px #9D9D9D;
