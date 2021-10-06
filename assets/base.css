@@ -2324,7 +2324,10 @@ width:35%;
   text-decoration: underline;
   }
      
-  
+  #location-search-btn {
+    background-color: #03528b;
+    color: #fff;
+}
   .store-locator h3{
     font-size: 2.8rem;
     text-transform: uppercase;
