@@ -2325,7 +2325,8 @@ width:35%;
   }
             
   .store-locator{
-    border: 1px #9D9D9D;
+    margin-right: 130px;
+    border: solid 1px #9D9D9D;
 	background-color: #fff;
     padding-left: 45px;
 	opacity: 0.8;
