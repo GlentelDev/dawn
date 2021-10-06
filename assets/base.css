@@ -2302,6 +2302,14 @@ width: 85%;
 }
   
   
+ @media only screen and (min-width: 750px) {
+   .store-locator {
+     margin-right: 0px;
+   }
+ }
+  
+  
+  
   .Shogun-carriers-Logo{
   Background-color:#004A98;
     -webkit-box-shadow: 0 8px 6px -6px #a9a9a9;
