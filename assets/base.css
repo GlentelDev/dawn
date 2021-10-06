@@ -2328,6 +2328,7 @@ width:35%;
   .store-locator h3{
     text-transform: uppercase;
     font-weight: bold;
+    margin-top: 15px;
     margin-bottom: 10px;
   
   }
