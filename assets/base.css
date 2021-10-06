@@ -2306,6 +2306,9 @@ width:35%;
   
  
   .shogun-icon{font-size: 64px !important;}
+  .shg-fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;}
   .shogun-icon-wrapper{display:none;}
   
   .Shogun-img-bottom1{
