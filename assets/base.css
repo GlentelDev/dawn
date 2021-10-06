@@ -2292,6 +2292,12 @@ width:35%;
     .header__menu-item {
   	min-width: 162px !important;
   }
+    
+     .store-locator-add{
+  padding: 10px;
+width: 85%;
+  
+  }
   
 }
   
@@ -2305,13 +2311,7 @@ width:35%;
   
   
  
-  .shogun-icon{font-size: 34px !important;
-vertical-align: middle;
-  border-radius: 4px;
-  background-color: #0457A2;
-color: #fff;
-border: solid 2px #0457A2;
-  }
+
   
   
   .Shogun-img-bottom1{
@@ -2353,4 +2353,12 @@ border: solid 2px #0457A2;
   padding: 10px;
 width: 72%;
   
+  }
+  
+    .shogun-icon{font-size: 34px !important;
+vertical-align: middle;
+  border-radius: 4px;
+  background-color: #0457A2;
+color: #fff;
+border: solid 2px #0457A2;
   }
