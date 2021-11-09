@@ -1,15 +1,5 @@
 {
   "sections": {
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "settings": {
-      }
-    },
-    "shogun-above": {
-      "type": "shogun-above",
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -104,6 +94,13 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "af3bfd39-f562-4218-babb-175da0ce4879": {
+          "type": "text",
+          "settings": {
+            "text": "$",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -121,12 +118,23 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "af3bfd39-f562-4218-babb-175da0ce4879"
       ],
       "settings": {
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false
+      }
+    },
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {
+      }
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {
       }
     },
     "product-recommendations": {
@@ -144,13 +152,20 @@
       "type": "shogun-below",
       "settings": {
       }
+    },
+    "1636502102240c18dd": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": ""
+      }
     }
   },
   "order": [
+    "main",
     "shogun-helper",
     "shogun-above",
-    "main",
     "product-recommendations",
-    "shogun-below"
+    "shogun-below",
+    "1636502102240c18dd"
   ]
 }
