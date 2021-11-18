@@ -33,55 +33,9 @@
             "picker_type": "button"
           }
         },
-        "22fc0d72-db2f-4020-b441-71b3a7cdef56": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<strong>RETURN IT<\/strong> WITH <a href=\"#\">DEVICE RETURN OPTION<\/a>"
-          }
-        },
-        "6a7f0253-3f68-45f6-8b18-c98e9eba7304": {
-          "type": "text",
-          "settings": {
-            "text": "${{ product.metafields.my_fields.fin_def_mthly.value }}\/mo after bill credit",
-            "text_style": "body"
-          }
-        },
-        "f635ec8f-078d-460f-b9ec-8b5feea75056": {
-          "type": "text",
-          "settings": {
-            "text": "${{ product.metafields.my_fields.price.value }} down |  {{ product.metafields.my_fields.term.value }} {{ product.metafields.my_fields.apr.value }}|",
-            "text_style": "body"
-          }
-        },
-        "9f036dd2-4a9f-46f1-a57b-e0f3308ee204": {
-          "type": "text",
-          "settings": {
-            "text": "SAVE $  over 24 months compared to full device price",
-            "text_style": "body"
-          }
-        },
-        "3fb7a6f4-166a-4bae-ab00-c8bc19d97bac": {
-          "type": "text",
-          "settings": {
-            "text": "Full device price: ${{ product.metafields.my_fields.msrp.value }}",
-            "text_style": "body"
-          }
-        },
-        "0a9df42c-aa39-456c-a3ce-8f05d5bf1fd6": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<hr>\n<strong>KEEPIT<\/strong>"
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
           }
         },
         "description": {
@@ -94,13 +48,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "af3bfd39-f562-4218-babb-175da0ce4879": {
-          "type": "text",
-          "settings": {
-            "text": "$",
-            "text_style": "body"
-          }
         }
       },
       "block_order": [
@@ -109,17 +56,9 @@
         "subtitle",
         "price",
         "variant_picker",
-        "22fc0d72-db2f-4020-b441-71b3a7cdef56",
-        "6a7f0253-3f68-45f6-8b18-c98e9eba7304",
-        "f635ec8f-078d-460f-b9ec-8b5feea75056",
-        "9f036dd2-4a9f-46f1-a57b-e0f3308ee204",
-        "3fb7a6f4-166a-4bae-ab00-c8bc19d97bac",
-        "0a9df42c-aa39-456c-a3ce-8f05d5bf1fd6",
         "quantity_selector",
-        "buy_buttons",
         "description",
-        "share",
-        "af3bfd39-f562-4218-babb-175da0ce4879"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
