@@ -117,26 +117,84 @@
                 </div>
               </details>
             </div>
-          {%- when 'fin_monthly' -%}
- 			{% capture 'meta_data1' %}
-    			{% for variant in product.variants %}
-        			{{variant.id}}:{{ variant.metafields.my_fields.fin_monthly | json }}
-            		{% unless forloop.last %},{% endunless %}
-    			{% endfor %}
- 			{% endcapture %}
-            <div class="fin_monthly">            
-           		{{ variant.metafields.my_fields.fin_monthly }}
-     		</div>
-          {%- when 'fin_def_monthly' -%}
- 			{% capture 'meta_data2' %}
-    			{% for variant in product.variants %}
-        			{{variant.id}}:{{ variant.metafields.my_fields.fin_def_monthly | json }}
-            		{% unless forloop.last %},{% endunless %}
-    			{% endfor %}
- 			{% endcapture %}
-            <div class="fin_def_monthly">            
-           		{{ variant.metafields.my_fields.fin_def_monthly }}
-     		</div>
+          <div>
+              <strong>RETURN IT</strong> with <a href="#">DEVICE RETURN OPTION</a>
+              <p class="variant_fin_def_mthly" style="font-size:1.5rem; font-weight:400;"></p>
+              <p class="variant_fin_def_mthly_sale" style="font-size:1.5rem; font-weight:400; color:red;"></p>
+              <span class="variant_price"></span><span> down |</span><span class="variant_term"></span> <span> mos |</span><span class="variant_apr"></span>
+              <span class="variant_carrier"></span> full device price: <span class="variant_mrsp"></span>
+          </div>
+          <div>
+              <p><strong>KEEP IT</strong></p>
+              <p class="variant_fin_monthly" style="font-size:1.5rem; font-weight:400;"></p>
+              <p class="variant_fin_monthly_sale" style="font-size:1.5rem; font-weight:400; color:red;"></p>
+              <span class="variant_price"></span><span> down |</span><span class="variant_term"></span> <span> mos |</span><span class="variant_apr"></span>
+              <span class="variant_carrier"></span> full device price: <span class="variant_mrsp"></span>
+          </div>
+          <span>PLUS </span><p class="variant_isc" style="display: none;"></p><span> in-store credit</span>
+
+          {% capture 'meta_data1' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.fin_def_mthly | json }}
+                  {% unless forloop.last %},{% endunless %}
+             {% endfor %}
+          {% endcapture %}  
+
+          {% capture 'meta_data2' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.fin_def_mthly_sale | json }}
+                  {% unless forloop.last %},{% endunless %}
+             {% endfor %}
+          {% endcapture %}  
+
+          {% capture 'meta_data3' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.price | json }}
+                  {% unless forloop.last %},{% endunless %}  
+             {% endfor %}
+          {% endcapture %}  
+
+          {% capture 'meta_data4' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.term | json }}
+                  {% unless forloop.last %},{% endunless %}
+             {% endfor %}
+          {% endcapture %}  
+
+          {% capture 'meta_data5' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.apr | json }}   
+                  {% unless forloop.last %},{% endunless %}
+             {% endfor %}
+          {% endcapture %}  
+
+          {% capture 'meta_data6' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.carrier | json }}
+                  {% unless forloop.last %},{% endunless %}
+             {% endfor %}
+          {% endcapture %}  
+
+          {% capture 'meta_data7' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.mrsp | json }}
+                  {% unless forloop.last %},{% endunless %}
+             {% endfor %}
+          {% endcapture %}  
+
+          {% capture 'meta_data8' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.fin_monthly | json }}
+                  {% unless forloop.last %},{% endunless %}
+             {% endfor %}
+          {% endcapture %}  
+
+          {% capture 'meta_data9' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.fin_monthly_sale | json }}
+                  {% unless forloop.last %},{% endunless %}           
+             {% endfor %}
+          {% endcapture %}  
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
@@ -485,26 +543,117 @@
 {%- endif -%}
 
 <script>
-  const currentVariantId = {{ product.selected_or_first_available_variant.id }};
-  const metaData1 = { {{ meta_data1 }} };
-  const metaData2 = { {{ meta_data2 }} };
-  const variantDescription = (id) => {
-    let selector1 = document.querySelector('.fin_monthly');
-    let selector2 = document.querySelector('.fin_def_mthly');
-     if (metaData1[id]) { 
-     selector1.style.display = 'block';
-     selector1.innerHTML = metaData1[id];   
-        }   
-     else selector1.style.display = 'none';
+    const currentVariantId = {{ product.selected_or_first_available_variant.id }};
+    const metaData1 = { {{ meta_data1 }} };    
+    const metaData2 = { {{ meta_data2 }} };  
+    const metaData3 = { {{ meta_data3 }} };  
+    const metaData4 = { {{ meta_data4 }} };  
+    const metaData5 = { {{ meta_data5 }} };  
+    const metaData6 = { {{ meta_data6 }} };  
+    const metaData7 = { {{ meta_data7 }} };  
+    const metaData8 = { {{ meta_data8 }} };  
+    const metaData9 = { {{ meta_data9 }} };     
 
-     if (metaData2[id])  {
-     selector2.style.display = 'block';
-     selector2.innerHTML = metaData2[id];
-        }
-     else selector2.style.display = 'none';
-  }
-  variantDescription(currentVariantId);
-</script>
+    const finDefMthly = (id) => {
+    let selector1 = document.querySelector('.variant_fin_def_mthly');
+      if (metaData1[id]) {
+       selector.style.display = 'block'
+       selector.innerHTML = metaData1[id];
+      }
+      else 
+       selector.style.display = 'none'
+    }
+    finDefMthly(currentVariantId);
+
+    const finDefMthlySale = (id) => {
+    let selector2 = document.querySelector('.variant_fin_def_mthly_sale');
+      if (metaData2[id]) {
+       selector.style.display = 'block'
+       selector.innerHTML = metaData2[id];
+      }
+      else 
+       selector.style.display = 'none'
+    }
+    finDefMthlySale(currentVariantId);
+
+    const price = (id) => {
+    let selector3 = document.querySelector('.variant_price');
+      if (metaData3[id]) {
+       selector.style.display = 'block'
+       selector.innerHTML = metaData3[id];
+      }
+      else 
+       selector.style.display = 'none'
+    }
+    price(currentVariantId);
+
+    const term = (id) => {
+    let selector4 = document.querySelector('.variant_term');
+      if (metaData4[id]) {
+       selector.style.display = 'block'
+       selector.innerHTML = metaData4[id];
+      }
+      else 
+       selector.style.display = 'none'
+    }
+    term(currentVariantId);
+
+    const apr = (id) => {
+    let selector5 = document.querySelector('.variant_apr');
+      if (metaData5[id]) {
+       selector.style.display = 'block'
+       selector.innerHTML = metaData5[id];
+      }
+      else 
+       selector.style.display = 'none'
+    }
+    apr(currentVariantId);
+
+    const carrier = (id) => {
+    let selector6 = document.querySelector('.variant_carrier');
+      if (metaData6[id]) {
+       selector.style.display = 'block'
+       selector.innerHTML = metaData6[id];
+      }
+      else 
+       selector.style.display = 'none'
+    }
+    carrier(currentVariantId);
+
+    const mrsp = (id) => {
+    let selector7 = document.querySelector('.variant_mrsp');
+      if (metaData7[id]) {
+       selector.style.display = 'block'
+       selector.innerHTML = metaData7[id];
+      }
+      else 
+       selector.style.display = 'none'
+    }
+    mrsp(currentVariantId);
+
+    const finMonthly = (id) => {
+    let selector8 = document.querySelector('.variant_fin_monthly');
+      if (metaData8[id]) {
+       selector.style.display = 'block'
+       selector.innerHTML = metaData8[id];
+      }
+      else 
+       selector.style.display = 'none'
+    }
+    finMonthly(currentVariantId);
+
+    const finMonthlySale = (id) => {
+    let selector9 = document.querySelector('.variant_fin_monthly_sale');
+      if (metaData9[id]) {
+       selector.style.display = 'block'
+       selector.innerHTML = metaData9[id];
+      }
+      else 
+       selector.style.display = 'none'
+    }
+    finMonthlySale(currentVariantId);
+  
+  </script>
 
 
 {% schema %}
