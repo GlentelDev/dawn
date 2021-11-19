@@ -504,6 +504,7 @@ class VariantSelects extends HTMLElement {
   onVariantChange() {
     this.updateOptions();
     this.updateMasterId();
+    this.updateMeta();
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
 
@@ -529,6 +530,11 @@ class VariantSelects extends HTMLElement {
       }).includes(false);
     });
   }
+  
+  updateMeta() {
+    variantDescription(this.currentVariant.id);
+   }  
+
 
   updateMedia() {
     if (!this.currentVariant || !this.currentVariant?.featured_media) return;
