@@ -117,18 +117,15 @@
                 </div>
               </details>
             </div>
-     		<div class="fin_monthly">            
-           		{{ variant.metafields.my_fields.fin_monthly }}
-     		</div>
           {%- when 'fin_monthly' -%}
  			{% capture 'meta_data1' %}
     			{% for variant in product.variants %}
         			{{variant.id}}:{{ variant.metafields.my_fields.fin_monthly | json }}
             		{% unless forloop.last %},{% endunless %}
     			{% endfor %}
- 			{% endcapture %}     
-     		<div class="fin_def_monthly">            
-           		{{ variant.metafields.my_fields.fin_def_monthly }}
+ 			{% endcapture %}
+            <div class="fin_monthly">            
+           		{{ variant.metafields.my_fields.fin_monthly }}
      		</div>
           {%- when 'fin_def_monthly' -%}
  			{% capture 'meta_data1' %}
@@ -136,7 +133,10 @@
         			{{variant.id}}:{{ variant.metafields.my_fields.fin_def_monthly | json }}
             		{% unless forloop.last %},{% endunless %}
     			{% endfor %}
- 			{% endcapture %}     
+ 			{% endcapture %}
+            <div class="fin_def_monthly">            
+           		{{ variant.metafields.my_fields.fin_def_monthly }}
+     		</div>
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
