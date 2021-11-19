@@ -128,7 +128,7 @@
            		{{ variant.metafields.my_fields.fin_monthly }}
      		</div>
           {%- when 'fin_def_monthly' -%}
- 			{% capture 'meta_data1' %}
+ 			{% capture 'meta_data2' %}
     			{% for variant in product.variants %}
         			{{variant.id}}:{{ variant.metafields.my_fields.fin_def_monthly | json }}
             		{% unless forloop.last %},{% endunless %}
