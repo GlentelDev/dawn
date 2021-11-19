@@ -117,6 +117,26 @@
                 </div>
               </details>
             </div>
+          {%- when 'variant_fin_monthly' -%}
+ 			{% capture 'meta_data1' %}
+    			{% for variant in product.variants %}
+        			{{variant.id}}:{{ variant.metafields.my_fields.fin_monthly | json }}
+            		{% unless forloop.last %},{% endunless %}
+    			{% endfor %}
+ 			{% endcapture %}     
+     		<div class="variant_fin_monthly">            
+           		{{ variant.metafields.my_fields.variant_fin_monthly }}
+     		</div>
+          {%- when 'variant_fin_def_monthly' -%}
+ 			{% capture 'meta_data1' %}
+    			{% for variant in product.variants %}
+        			{{variant.id}}:{{ variant.metafields.my_fields.fin_def_monthly | json }}
+            		{% unless forloop.last %},{% endunless %}
+    			{% endfor %}
+ 			{% endcapture %}     
+     		<div class="variant_fin_def_monthly">            
+           		{{ variant.metafields.my_fields.variant_fin_def_monthly }}
+     		</div>
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
@@ -463,6 +483,29 @@
 
   <script src="{{ 'product-model.js' | asset_url }}" defer></script>
 {%- endif -%}
+
+<script>
+  const currentVariantId = {{ product.selected_or_first_available_variant.id }};
+  const metaData1 = { {{ meta_data1 }} };
+  const metaData2 = { {{ meta_data2 }} };
+  const variantDescription = (id) => {
+    let selector1 = document.querySelector('.variant_fin_monthly');
+    let selector2 = document.querySelector('.variant_fin_def_mthly');
+     if (metaData1[id]) { 
+     selector1.style.display = 'block';
+     selector1.innerHTML = metaData1[id];   
+        }   
+     else selector1.style.display = 'none';
+
+     if (metaData2[id])  {
+     selector2.style.display = 'block';
+     selector2.innerHTML = metaData2[id];
+        }
+     else selector2.style.display = 'none';
+  }
+  variantDescription(currentVariantId);
+</script>
+
 
 {% schema %}
 {
