@@ -532,7 +532,15 @@ class VariantSelects extends HTMLElement {
   }
   
   updateMeta() {
-    variantDescription(this.currentVariant.id);
+    finDefMthly(this.currentVariant.id);
+    finDefMthlySale(this.currentVariant.id);
+    price(this.currentVariant.id);
+    term(this.currentVariant.id);
+    apr(this.currentVariant.id);
+    carrier(this.currentVariant.id);
+    mrsp(this.currentVariant.id);
+    finMonthly(this.currentVariant.id);
+    finMonthlySale(this.currentVariant.id);
    }  
 
 
