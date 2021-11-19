@@ -96,7 +96,8 @@
               <div class="product__description rte">
                 {{ product.description }}
               </div>
-        	<div>
+            {%- endif -%}
+            <div>
               <strong>RETURN IT</strong> with <a href="#">DEVICE RETURN OPTION</a>
               <p class="variant_fin_def_mthly" style="font-size:1.5rem; font-weight:400;"></p>
               <p class="variant_fin_def_mthly_sale" style="font-size:1.5rem; font-weight:400; color:red;"></p>
@@ -174,7 +175,6 @@
                   {% unless forloop.last %},{% endunless %}           
              {% endfor %}
           {% endcapture %}  
-            {%- endif -%}
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}
