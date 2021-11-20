@@ -494,15 +494,24 @@
 
   <script>
     const currentVariantId = {{ product.selected_or_first_available_variant.id }};
-    const metaData = { {{ meta_data }} };        
+    const metaData1 = { {{ meta_data1 }} };
+    const metaData8 = { {{ meta_data8 }} };  
     const pricingDetails = (id) => {
-    let selector = document.querySelector('.variant_fin_def_mthly');
-      if (metaData[id]) {
-       selector.style.display = 'block'
-       selector.innerHTML = metaData[id];
+    let selector1 = document.querySelector('.variant_fin_def_mthly');
+    let selector8 = document.querySelector('.variant_fin_mthly');
+      if (metaData1[id]) {
+       selector1.style.display = 'block'
+       selector1.innerHTML = metaData1[id];
       }
       else 
-       selector.style.display = 'none'
+       selector.style.display = 'none';
+      
+      if (metaData8[id]) {
+       selector8.style.display = 'block'
+       selector8.innerHTML = metaData8[id];
+      }
+      else 
+       selector.style.display = 'none';    
     }
     pricingDetails(currentVariantId);
   
