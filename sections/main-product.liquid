@@ -259,13 +259,25 @@
                   {% unless forloop.last %},{% endunless %}
              {% endfor %}
           {% endcapture %}
-        
+          {% capture 'meta_data2' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.my_fields.fin_def_mthly_sale | json }}
+                  {% unless forloop.last %},{% endunless %}
+             {% endfor %}
+          {% endcapture %}
+
+          {% capture 'meta_data3' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.my_fields.price | json }}
+                  {% unless forloop.last %},{% endunless %}  
+             {% endfor %}
+          {% endcapture %}
           {% capture 'meta_data8' %}       
           	{% for variant in product.variants %}
               	{{variant.id}}:{{ variant.metafields.my_fields.fin_monthly | json }}
               	{% unless forloop.last %},{% endunless %}
          	{% endfor %}
-      	  {% endcapture %} 
+      	  {% endcapture %}
 
             <noscript>
               <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
