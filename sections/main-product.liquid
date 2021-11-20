@@ -263,7 +263,6 @@
                   {% unless forloop.last %},{% endunless %}
              {% endfor %}
           {% endcapture %}
-
           {% capture 'meta_data3' %}       
               {% for variant in product.variants %}
                   {{variant.id}}:{{ variant.metafields.my_fields.price | json }}
