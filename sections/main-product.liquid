@@ -304,6 +304,12 @@
               	{{variant.id}}:{{ variant.metafields.my_fields.fin_monthly_sale | json }}
               	{% unless forloop.last %},{% endunless %}
          	{% endfor %}
+          {% endcapture %}
+          {% capture 'meta_data10' %}       
+          	{% for variant in product.variants %}
+              	{{variant.id}}:{{ variant.metafields.my_fields.isc | json }}
+              	{% unless forloop.last %},{% endunless %}
+         	{% endfor %}
       	  {% endcapture %}
         
             <noscript>
@@ -615,7 +621,13 @@
        selector9.innerHTML = metaData9[id];
       }
       else 
-       selector9.style.display = 'none';    
+       selector9.style.display = 'none';   
+      if (metaData10[id]) {
+       selector10.style.display = 'inline'
+       selector10.innerHTML = metaData10[id];
+      }
+      else 
+       selector10.style.display = 'none';    
     }
     pricingDetails(currentVariantId);
   
