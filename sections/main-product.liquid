@@ -259,6 +259,7 @@
                   {% unless forloop.last %},{% endunless %}
              {% endfor %}
           {% endcapture %}
+        
           {% capture 'meta_data8' %}       
           	{% for variant in product.variants %}
               	{{variant.id}}:{{ variant.metafields.my_fields.fin_monthly | json }}
