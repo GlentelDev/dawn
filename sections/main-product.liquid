@@ -113,12 +113,18 @@
               <p><span class="variant_carrier"></span> full device price: <span class="variant_mrsp"></span></p>
           </div>
           <span>PLUS </span><p class="variant_isc" style="display: none;"></p><span> in-store credit</span>
-          {% capture 'meta_data' %}       
+          {% capture 'meta_data1' %}       
               {% for variant in product.variants %}
                   {{variant.id}}:{{ variant.metafields.my_fields.fin_def_mthly | json }}
                   {% unless forloop.last %},{% endunless %}
              {% endfor %}
           {% endcapture %}
+          {% capture 'meta_data8' %}       
+          	{% for variant in product.variants %}
+              	{{variant.id}}:{{ variant.metafields.my_fields.fin_monthly | json }}
+              	{% unless forloop.last %},{% endunless %}
+         	{% endfor %}
+      	  {% endcapture %} 
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}
