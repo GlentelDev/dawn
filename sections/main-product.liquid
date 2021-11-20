@@ -544,116 +544,95 @@
 
 <script>
     const currentVariantId = {{ product.selected_or_first_available_variant.id }};
-    const metaData1 = { {{ meta_data1 }} };    
-    const metaData2 = { {{ meta_data2 }} };  
-    const metaData3 = { {{ meta_data3 }} };  
-    const metaData4 = { {{ meta_data4 }} };  
-    const metaData5 = { {{ meta_data5 }} };  
-    const metaData6 = { {{ meta_data6 }} };  
-    const metaData7 = { {{ meta_data7 }} };  
-    const metaData8 = { {{ meta_data8 }} };  
-    const metaData9 = { {{ meta_data9 }} };     
+    const metaData1 = { {{ meta_data1 }} };
+    const metaData2 = { {{ meta_data2 }} };
+    const metaData3 = { {{ meta_data3 }} };
+    const metaData4 = { {{ meta_data4 }} };
+    const metaData5 = { {{ meta_data5 }} };
+    const metaData6 = { {{ meta_data6 }} };
+    const metaData7 = { {{ meta_data7 }} };
+    const metaData8 = { {{ meta_data8 }} };
+    const metaData9 = { {{ meta_data9 }} };
+    const pricingDetails = (id) => {
+        let selector1 = document.querySelector('.variant_fin_def_mthly');
+        let selector2 = document.querySelector('.variant_fin_def_mthly_sale');
+        let selector3 = document.querySelector('.variant_price');
+        let selector4 = document.querySelector('.variant_term');
+        let selector5 = document.querySelector('.variant_apr');
+        let selector6 = document.querySelector('.variant_carrier');
+        let selector7 = document.querySelector('.variant_mrsp');
+        let selector8 = document.querySelector('.variant_fin_monthly');
+        let selector9 = document.querySelector('.variant_fin_monthly sale');
+            if (metaData1[id]) {
+                selector.style.display = 'block'
+                selector.innerHTML = metaData1[id];
+            }
+            else 
+                selector.style.display = 'none';
 
-    const finDefMthly = (id) => {
-    let selector1 = document.querySelector('.variant_fin_def_mthly');
-      if (metaData1[id]) {
-       selector.style.display = 'block'
-       selector.innerHTML = metaData1[id];
-      }
-      else 
-       selector.style.display = 'none'
-    }
-    finDefMthly(currentVariantId);
+            if (metaData2[id]) {
+                selector.style.display = 'block'
+                selector.innerHTML = metaData2[id];
+            }
+            else 
+                selector.style.display = 'none';
 
-    const finDefMthlySale = (id) => {
-    let selector2 = document.querySelector('.variant_fin_def_mthly_sale');
-      if (metaData2[id]) {
-       selector.style.display = 'block'
-       selector.innerHTML = metaData2[id];
-      }
-      else 
-       selector.style.display = 'none'
-    }
-    finDefMthlySale(currentVariantId);
+            if (metaData3[id]) {
+                selector.style.display = 'block'
+                selector.innerHTML = metaData3[id];
+            }
+            else 
+                selector.style.display = 'none';
+   
+            if (metaData4[id]) {
+                selector.style.display = 'block'
+                selector.innerHTML = metaData4[id];
+            }
+            else 
+                selector.style.display = 'none';
 
-    const price = (id) => {
-    let selector3 = document.querySelector('.variant_price');
-      if (metaData3[id]) {
-       selector.style.display = 'block'
-       selector.innerHTML = metaData3[id];
-      }
-      else 
-       selector.style.display = 'none'
-    }
-    price(currentVariantId);
+            if (metaData5[id]) {
+                selector.style.display = 'block'
+                selector.innerHTML = metaData5[id];
+            }
+            else 
+                selector.style.display = 'none';
+            }
 
-    const term = (id) => {
-    let selector4 = document.querySelector('.variant_term');
-      if (metaData4[id]) {
-       selector.style.display = 'block'
-       selector.innerHTML = metaData4[id];
-      }
-      else 
-       selector.style.display = 'none'
-    }
-    term(currentVariantId);
+            if (metaData6[id]) {
+                selector.style.display = 'block'
+                selector.innerHTML = metaData6[id];
+            }
+            else 
+                selector.style.display = 'none';
 
-    const apr = (id) => {
-    let selector5 = document.querySelector('.variant_apr');
-      if (metaData5[id]) {
-       selector.style.display = 'block'
-       selector.innerHTML = metaData5[id];
-      }
-      else 
-       selector.style.display = 'none'
-    }
-    apr(currentVariantId);
+            if (metaData7[id]) {
+                selector.style.display = 'block'
+                selector.innerHTML = metaData7[id];
+            }
+            else 
+                selector.style.display = 'none';
+            }
 
-    const carrier = (id) => {
-    let selector6 = document.querySelector('.variant_carrier');
-      if (metaData6[id]) {
-       selector.style.display = 'block'
-       selector.innerHTML = metaData6[id];
-      }
-      else 
-       selector.style.display = 'none'
-    }
-    carrier(currentVariantId);
+            if (metaData8[id]) {
+                selector.style.display = 'block'
+                selector.innerHTML = metaData8[id];
+            }
+            else 
+                selector.style.display = 'none';
+            }
 
-    const mrsp = (id) => {
-    let selector7 = document.querySelector('.variant_mrsp');
-      if (metaData7[id]) {
-       selector.style.display = 'block'
-       selector.innerHTML = metaData7[id];
-      }
-      else 
-       selector.style.display = 'none'
-    }
-    mrsp(currentVariantId);
-
-    const finMonthly = (id) => {
-    let selector8 = document.querySelector('.variant_fin_monthly');
-      if (metaData8[id]) {
-       selector.style.display = 'block'
-       selector.innerHTML = metaData8[id];
-      }
-      else 
-       selector.style.display = 'none'
-    }
-    finMonthly(currentVariantId);
-
-    const finMonthlySale = (id) => {
-    let selector9 = document.querySelector('.variant_fin_monthly_sale');
-      if (metaData9[id]) {
-       selector.style.display = 'block'
-       selector.innerHTML = metaData9[id];
-      }
-      else 
-       selector.style.display = 'none'
-    }
-    finMonthlySale(currentVariantId);
+            if (metaData9[id]) {
+                selector.style.display = 'block'
+                selector.innerHTML = metaData9[id];
+            }
+            else 
+                selector.style.display = 'none'
+            }
+            pricingDetails(currentVariantId);
   
   </script>
+
 
 
 {% schema %}
