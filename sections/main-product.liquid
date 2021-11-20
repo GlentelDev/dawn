@@ -100,7 +100,7 @@
 		  <p class="variant_fin_def_mthly" style="display: none;"></p>
           {% capture 'meta_data' %}       
               {% for variant in product.variants %}
-                  {{variant.id}}:{{ variant.metafields.fin_def_mthly | json }}
+                  {{variant.id}}:{{ variant.metafields.my_fields.fin_def_mthly | json }}
                   {% unless forloop.last %},{% endunless %}
              {% endfor %}
           {% endcapture %}
