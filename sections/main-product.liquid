@@ -507,12 +507,22 @@
     const metaData1 = { {{ meta_data1 }} };
     const metaData2 = { {{ meta_data2 }} };
     const metaData3 = { {{ meta_data3 }} };
-    const metaData8 = { {{ meta_data8 }} };  
+    const metaData4 = { {{ meta_data4 }} };
+    const metaData5 = { {{ meta_data5 }} };
+    const metaData6 = { {{ meta_data6 }} };
+    const metaData7 = { {{ meta_data7 }} };
+    const metaData8 = { {{ meta_data8 }} };
+    const metaData9 = { {{ meta_data9 }} };
     const pricingDetails = (id) => {
     let selector1 = document.querySelector('.variant_fin_def_mthly');
     let selector2 = document.querySelector('.variant_fin_def_mthly_sale');
     let selector3 = document.querySelector('.variant_price');
+    let selector4 = document.querySelector('.variant_term');
+    let selector5 = document.querySelector('.variant_apr');
+    let selector6 = document.querySelector('.variant_carrier');
+    let selector7 = document.querySelector('.variant_mrsp');
     let selector8 = document.querySelector('.variant_fin_monthly');
+    let selector9 = document.querySelector('.variant_fin_monthly sale');
       if (metaData1[id]) {
        selector1.style.display = 'block'
        selector1.innerHTML = metaData1[id];
@@ -527,19 +537,54 @@
       else 
        selector2.style.display = 'none';
       
-      if (metaData1[id]) {
+      if (metaData3[id]) {
        selector3.style.display = 'block'
        selector3.innerHTML = metaData3[id];
       }
       else 
        selector3.style.display = 'none';
       
-      if (metaData8[id]) {
+      if (metaData4[id]) {
+       selector4.style.display = 'block'
+       selector4.innerHTML = metaData4[id];
+      }
+      else 
+       selector4.style.display = 'none';
+
+      if (metaData5[id]) {
+       selector5.style.display = 'block'
+       selector5.innerHTML = metaData5[id];
+      }
+      else 
+       selector5.style.display = 'none';
+      
+      if (metaData6[id]) {
+       selector6.style.display = 'block'
+       selector6.innerHTML = metaData6[id];
+      }
+      else 
+       selector6.style.display = 'none';
+      
+      if (metaData7[id]) {
+       selector7.style.display = 'block'
+       selector7.innerHTML = metaData7[id];
+      }
+      else 
+       selector7.style.display = 'none';
+      
+      if (metaData[id]) {
        selector8.style.display = 'block'
        selector8.innerHTML = metaData8[id];
       }
       else 
-       selector8.style.display = 'none';    
+       selector8.style.display = 'none';  
+     
+      if (metaData9[id]) {
+       selector9.style.display = 'block'
+       selector9.innerHTML = metaData9[id];
+      }
+      else 
+       selector9.style.display = 'none';    
     }
     pricingDetails(currentVariantId);
   
