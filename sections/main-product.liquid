@@ -113,7 +113,7 @@
               <p><span class="variant_carrier"></span> full device price: <span class="variant_mrsp"></span></p>
           </div>
           <span>PLUS </span><p class="variant_isc" style="display: none;"></p><span> in-store credit</span>
-          {% capture 'meta_data1' %}       
+          {% capture 'meta_data' %}       
               {% for variant in product.variants %}
                   {{variant.id}}:{{ variant.metafields.fin_def_mthly | json }}
                   {% unless forloop.last %},{% endunless %}
