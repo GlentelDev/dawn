@@ -250,7 +250,7 @@
               <p><span class="variant_price"></span> down | <span class="variant_term"></span> | <span class="variant_apr"></span></p>
               <p><span class="variant_carrier"></span> full device price: <span class="variant_mrsp"></span></p>
           </div>
-          <span>PLUS </span><p class="variant_isc" style="display: none;"></p><span> in-store credit</span>
+          <span style="font-weight:600;">PLUS </span><p class="variant_isc" style="font-weight:600;"></p><span style="font-weight:600;"> in-store credit</span>
           {% capture 'meta_data1' %}       
               {% for variant in product.variants %}
                   {{variant.id}}:{{ variant.metafields.my_fields.fin_def_mthly | json }}
