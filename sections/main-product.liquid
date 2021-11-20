@@ -118,13 +118,63 @@
                   {{variant.id}}:{{ variant.metafields.my_fields.fin_def_mthly | json }}
                   {% unless forloop.last %},{% endunless %}
              {% endfor %}
-          {% endcapture %}
+          {% endcapture %}  
+
+          {% capture 'meta_data2' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.my_fields.fin_def_mthly_sale | json }}
+                  {% unless forloop.last %},{% endunless %}
+             {% endfor %}
+          {% endcapture %}  
+
+          {% capture 'meta_data3' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.my_fields.price | json }}
+                  {% unless forloop.last %},{% endunless %}  
+             {% endfor %}
+          {% endcapture %}  
+
+          {% capture 'meta_data4' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.my_fields.term | json }}
+                  {% unless forloop.last %},{% endunless %}
+             {% endfor %}
+          {% endcapture %}  
+
+          {% capture 'meta_data5' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.my_fields.apr | json }}   
+                  {% unless forloop.last %},{% endunless %}
+             {% endfor %}
+          {% endcapture %}  
+
+          {% capture 'meta_data6' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.my_fields.carrier | json }}
+                  {% unless forloop.last %},{% endunless %}
+             {% endfor %}
+          {% endcapture %}  
+
+          {% capture 'meta_data7' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.my_fields.mrsp | json }}
+                  {% unless forloop.last %},{% endunless %}
+             {% endfor %}
+          {% endcapture %}  
+
           {% capture 'meta_data8' %}       
-          	{% for variant in product.variants %}
-              	{{variant.id}}:{{ variant.metafields.my_fields.fin_monthly | json }}
-              	{% unless forloop.last %},{% endunless %}
-         	{% endfor %}
-      	  {% endcapture %} 
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.my_fields.fin_monthly | json }}
+                  {% unless forloop.last %},{% endunless %}
+             {% endfor %}
+          {% endcapture %}  
+
+          {% capture 'meta_data9' %}       
+              {% for variant in product.variants %}
+                  {{variant.id}}:{{ variant.metafields.my_fields.fin_monthly_sale | json }}
+                  {% unless forloop.last %},{% endunless %}           
+             {% endfor %}
+          {% endcapture %}  
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}
