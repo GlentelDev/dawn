@@ -2363,11 +2363,11 @@ width: 72%;
   
   }
   
-    .shogun-icon{font-size: 34px !important;
+    .shogun-icon1{font-size: 34px !important;
 vertical-align: middle;
   border-radius: 4px;
-  /*background-color: #0457A2;*/
+  background-color: #0457A2;
 color: #fff;
-  /* border: solid 2px #0457A2;NAV*/
+   border: solid 2px #0457A2;
   }
   
